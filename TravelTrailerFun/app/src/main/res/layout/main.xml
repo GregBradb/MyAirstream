@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!--
+    -->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <!--
+            -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="250dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="50dp"
+                    android:paddingTop="50dp"
+                    android:text="@string/some_text"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/findSelected"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_txt" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="250dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|end"
+                    android:width="170dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Select a Trip"
+                    android:textSize="20dp" />
+
+                <RadioGroup
+                    android:id="@+id/selectTripRG"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                    <RadioButton
+                        android:id="@+id/selectHome2Storage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Home to Storage"
+                        android:onClick="checkButtonClick" />
+                    <RadioButton
+                        android:id="@+id/selectStorage2Camp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Storage to Camp"
+                        android:onClick="checkButtonClick" />
+                    <RadioButton
+                        android:id="@+id/selectArriveCamp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Arrive at Camp"
+                        android:onClick="checkButtonClick" />
+                    <RadioButton
+                        android:id="@+id/selectDepartCamp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Depart from Camp"
+                        android:onClick="checkButtonClick" />
+                    <RadioButton
+                        android:id="@+id/selectCamp2Storage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Camp to Storage"
+                        android:onClick="checkButtonClick" />
+                    <RadioButton
+                        android:id="@+id/selectDumpStation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Dump Station"
+                        android:onClick="checkButtonClick" />
+                    <RadioButton
+                        android:id="@+id/selectStorage2Home"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Storage to Home"
+                        android:onClick="checkButtonClick" />
+                </RadioGroup>
+
+            </LinearLayout>
+            <!--
+            -->
+        </TableRow>
+    </TableLayout>
+    <!--
+    -->
+
+    <ListView
+        android:id="@+id/actionListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbarAlwaysDrawVerticalTrack="true"/>
+
+</LinearLayout>

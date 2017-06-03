@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TravelTrailerFun</string>
+    <string name="some_text">Instructions / comments go here</string>
+
+    <string name="app_namex">ListView Checkboxes</string>
+    <string name="some_textx">
+         Some Checklist Actions!
+</string>
+    <string name="btn_txt">Which Trip is selected?</string>
+
+</resources>
